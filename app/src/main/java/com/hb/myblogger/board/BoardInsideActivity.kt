@@ -110,6 +110,9 @@ class BoardInsideActivity : AppCompatActivity() {
                     val myUid = FBAuth.getUid()
                     val writerUid = dataModel.uid
 
+                    Log.d(TAG, "삐삐뿌1" + myUid)
+                    Log.d(TAG, "삐삐뿌2" +writerUid)
+                    
                     if(myUid.equals(writerUid)){
                         binding.blogSettingIcon.isVisible = true
                     }else{
